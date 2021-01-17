@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RecyclerView recycler = (RecyclerView)findViewById(R.id.cars_recycler);
-        String caption [] = new String[Cars.cars.length];
+            String caption [] = new String[Cars.cars.length];
         int [] ids = new int [Cars.cars.length];
         for (int i=0 ;i<caption.length ; i++){
             caption[i]=Cars.cars[i].getName();
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void cardOnclick(View view){
         System.out.println("hiiiii");
         String Des="";

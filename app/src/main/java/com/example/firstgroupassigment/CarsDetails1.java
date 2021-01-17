@@ -3,6 +3,7 @@ package com.example.firstgroupassigment;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.example.firstgroupassigment.module.Cars;
+import com.example.firstgroupassigment.module.Location;
 
 public class CarsDetails1 extends AppCompatActivity {
     @Override
@@ -30,5 +32,10 @@ public class CarsDetails1 extends AppCompatActivity {
         txtName.setText(Name);
         txtDesc.setText(Descrip);
 
+    }
+
+    public void getlocation(View view) {
+        Intent intent = new Intent( this, Location.class);
+        startActivity(intent);
     }
 }
